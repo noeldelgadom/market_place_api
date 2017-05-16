@@ -32,12 +32,13 @@ group :doc do
 end
 
 group :test do
-  gem "spring-commands-rspec"
   gem "rspec-rails", "~> 2.14"
   gem "factory_girl_rails"
   gem 'ffaker'
+  gem "shoulda-matchers"
 end
 
+gem "spring-commands-rspec"
 gem 'devise'
 
 # Use ActiveModel has_secure_password
